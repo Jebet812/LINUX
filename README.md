@@ -61,14 +61,14 @@ It isn't preffered though because
 - Just recently created files may not be found because it uses a database updated once a day.
 
 #### Finding Binaries with whereis
-The *whereis* command not only returns the location of the binary but also its source and man page if available.
+The *whereis command* not only returns the location of the binary but also its source and man page if available.
 
 #### Finding Binaries in the PATH variable with which
 This command only returns the location of the binaries in the PATH variable in Linux. PATH holds the directories in wich the operating system looks for the commands youexecute at the command line.
 
 #### Performing more powerful searches with find
 This command is the most powerful and flexible of the searching utilizer. First you state directory in which to start the search then specify the type of file to searchand lastly give the name of the file you are searching for. 
-The *find command* only displays exact name matches. To remedy limitation use a wild card which come in different forms * . , ? and []. This can e useful to find a fil where you don't know the file extension.
+The *find command* only displays exact name matches. To remedy limitation use a wild card which come in different forms * . , ? and [ ]. This can e useful to find a fil where you don't know the file extension.
 
 #### Filtering with grep
 Used when one output is piped from one command to another.
@@ -77,6 +77,29 @@ The *ps command* is used to display processes running on machine.
 The *ps* command followed by the *aux* switches to specify which process information to display.
 *ps aux* will display all processes running in the system.
 If you want just one process you can get it by piping the output from *ps* to *grep* and searching for a keyword. *ps aux | grep apache2*
+
+### Modifying Files and Directories
+
+#### Creating Files
+1. __*Concatenation with cat*__: *cat* is generally used for displaying the contents of files, but it can also be used to create small files. To display contents of a file we follow *cat* with the file name. 
+*cat* command with a redirect *>* symbol will create a file. For examples, *cat > Pets* will create a file called Pets. Linux will then go into *interactive mode* where you can enter the contents of the file. Press CTRL-D to exit and return to prompt.
+2. __*File creation with touch*__: The *touch* command was originally developed so the user could simply touch file to change some details such as date created or modified. However, if te file doesnt exist it will create one. *touch My_New_File* will create a file called My_New_File.
+
+#### Creating a Directory
+*mkdir, make directory* command is used to create a new directory.
+
+#### Copying a file
+*cp* command is used to create a file in anew location leaving the old one in place.
+
+#### Renaming a File
+*mv, move* command will move thw file or directory to a new location or simply give an exixting file a new name. For example *mv newfile newfile2* will rename newfile to newfile2.
+
+#### Removing a File
+*rm, remove* command is used to remove a file.
+
+#### Removing a Directory
+*rmdir, remove directory* command is used to remove a directory. It however cannot remove a directory that isn't empty. To remove a directory with all its contents use *rmdir -r* command. 
+
 
 
 
