@@ -35,6 +35,5 @@ Used to check which user you are logged in as.
 
 #### Navigating the Linux Filesystem
 This helps to find applications, files and directories located in other directories. The structure is entirely text based since Linux is Command Line Interface (CLI)
-hence commands are used to navigate the file system.
-
+hence commands are used to navigate the file system
 
