@@ -36,20 +36,48 @@ Used to check which user you are logged in as.
 #### Navigating the Linux Filesystem
 This helps to find applications, files and directories located in other directories. The structure is entirely text based since Linux is Command Line Interface (CLI)
 hence commands are used to navigate the file system. 
-1. __*Changing Directories with cd*__: We use the *change directory, cd* command to change directory from terminal.
-To move up a level in file structure towards *root* we use *cd* followed by double dots (..), or more double dots pairs as many levels as needed.
-To move to the root level from the file structure from anywhere type *cd /*. */* represents the root file system.
+1. __*Changing Directories with, cd*__: We use the *change directory, cd* command to change directory from terminal.
+To move up a level in file structure towards *root* we use *cd* followed by double dots (. .), or more double dots pairs as many levels as needed.
+To move to the root level from the file structure from anywhere type *cd  /*.  */* represents the root file system.
 2. __*Listing the contents of directory with, ls*__: We use the *ls, list* command to see the contents of directory, files and subdirectories.
 It lists both files and directory contained in the directory.
-To get more information about the files and directories like the owner, size, permission and when last modified add an *-l* switch after the "ls*. The *l* stands for *long* hence *ls -l, long listing.*
+To get more information about the files and directories like the owner, size, permission and when last modified add an *-l* switch after the *ls*. The *l* stands for *long* hence *ls -l, long listing.*
 To show hidden files that cannot be found using *ls -l* use *ls -la.*
 3. __*Getting help*__: Nearly every command, application or utility in Linux has a dedicated help file to provide guidance for use.
 Type command you need help with followed by *-- help.* For example *ls --help*
 You can also use *-h* or *-?*
 
-#### Referencing Manual pages with , man
+#### Referencing Manual pages with, man
 In order to view more information on applications and commands use the , *manual (man) page* in Linux.
 To view the *man page* type *man* before the application, utility or command.
-To quit the manual page press Q to return to the commad prompt.
+To quit the manual page press Q to return to the command prompt.
+
+### Finding Stuff
+
+#### Searching with locate
+Type *locate* followed by the word denoting what you are looking for. 
+It isn't preffered though because 
+- It can be overwhelming since it gives too much information
+- Just recently created files may not be found because it uses a database updated once a day.
+
+#### Finding Binaries with whereis
+The *whereis* command not only returns the location of the binary but also its source and man page if available.
+
+#### Finding Binaries in the PATH variable with which
+This command only returns the location of the binaries in the PATH variable in Linux. PATH holds the directories in wich the operating system looks for the commands youexecute at the command line.
+
+#### Performing more powerful searches with find
+This command is the most powerful and flexible of the searching utilizer. First you state directory in which to start the search then specify the type of file to searchand lastly give the name of the file you are searching for. 
+The *find command* only displays exact name matches. To remedy limitation use a wild card which come in different forms * . , ? and []. This can e useful to find a fil where you don't know the file extension.
+
+#### Filtering with grep
+Used when one output is piped from one command to another.
+Piping: is taking output of one command and send it as input to another command. We use | command to do it. 
+The *ps command* is used to display processes running on machine.
+The *ps* command followed by the *aux* switches to specify which process information to display.
+*ps aux* will display all processes running in the system.
+If you want just one process you can get it by piping the output from *ps* to *grep* and searching for a keyword. *ps aux | grep apache2*
+
+
 
 
