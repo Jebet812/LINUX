@@ -83,16 +83,16 @@ If you want just one process you can get it by piping the output from *ps* to *g
 #### Creating Files
 1. __*Concatenation with cat*__: *cat* is generally used for displaying the contents of files, but it can also be used to create small files. To display contents of a file we follow *cat* with the file name. 
 *cat* command with a redirect *>* symbol will create a file. For examples, *cat > Pets* will create a file called Pets. Linux will then go into *interactive mode* where you can enter the contents of the file. Press CTRL-D to exit and return to prompt.
-2. __*File creation with touch*__: The *touch* command was originally developed so the user could simply touch file to change some details such as date created or modified. However, if te file doesnt exist it will create one. *touch My_New_File* will create a file called My_New_File.
+2. __*File creation with touch*__: The *touch* command was originally developed so the user could simply touch file to change some details such as date created or modified. However, if the file doesnt exist it will create one. *touch My_New_File* will create a file called My_New_File.
 
 #### Creating a Directory
 *mkdir, make directory* command is used to create a new directory.
 
 #### Copying a file
-*cp* command is used to create a file in anew location leaving the old one in place.
+*cp* command is used to create a file in a new location leaving the old one in place.
 
 #### Renaming a File
-*mv, move* command will move thw file or directory to a new location or simply give an exixting file a new name. For example *mv newfile newfile2* will rename newfile to newfile2.
+*mv, move* command will move the file or directory to a new location or simply give an existing file a new name. For example *mv newfile newfile2* will rename newfile to newfile2.
 
 #### Removing a File
 *rm, remove* command is used to remove a file.
