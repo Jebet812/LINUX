@@ -95,7 +95,7 @@ If you want just one process you can get it by piping the output from *``ps``* t
 *``mv``, move* command will move the file or directory to a new location or simply give an existing file a new name. For example *``mv newfile newfile2``* will rename newfile to newfile2.
 
 #### Removing a File
-*``rm, remove``* command is used to remove a file.
+*``rm,`` remove* command is used to remove a file.
 
 #### Removing a Directory
 *``rmdir``, remove directory* command is used to remove a directory. It however cannot remove a directory that isn't empty. To remove a directory with all its contents use *``rmdir -r``* command.
