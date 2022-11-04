@@ -27,7 +27,12 @@ For example searching for word *mysql* in *snort.conf* file using ``grep``<br/>
    ``cat /etc/snort/snort.conf | grep mysql``<br/>
 If there are two occurences of *mysql* and you want to replace every occurence of *mysql* with *MySQL* and save the new file to *snort2.conf.*<br/>
    ``sed s/mysql/MySQL/g /etc/snort/snort.conf > snort2.conf``<br/>
-The ``g`` *command* is suggests thet it should be replaced globally. If only the first *mysql* was to be replaced then leave out the ``g`` *command.*<br/>
-- The ``sed`` *commabd* can also be used to find and replace. To replace only the forth occurence of *mysql* place 4 at the end of the command.<br/>
-    ``sed s/mysql/MySQL/2 snort.conf > snort2.conf``
+The ``g`` *command* suggests that it should be replaced globally. If only the first *mysql* was to be replaced then leave out the ``g`` *command.*<br/>
+- The ``sed`` *command* can also be used to find and replace. To replace only the forth occurence of *mysql* place 4 at the end of the command.<br/>
+    ``sed s/mysql/MySQL/4 snort.conf > snort2.conf``
 
+### Viewing Files with ``more`` and ``less``
+
+``cat`` is good in displaying and creating small files but it has limitations in displaying large files because it scrolls through every page until it comes to the end which is impractical hence the use of ``more`` or ``less``
+1. __Controling and Displaying with ``more``__: ``more`` *command* displays a page of a file at a time where you can page up and down by pressing the ENTER KEY and Q key (for *quit*) to exit. 
+2. __Displaying and Filtering with ``less``__: Just like ``more``, ``less`` is fairly similar but with additional functionality. You can scroll through file at leisure but also filter it for items. At the bottom left of screen it will highlight the path to the file. Press */* key and ``less`` will let you search for items in file. Th first occurence of the word will be shown and to display the next occurence type ``n`` (for *next*)
