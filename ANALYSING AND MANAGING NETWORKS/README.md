@@ -11,8 +11,8 @@ This command is used to gather crucial information if you have a wireless adapte
 
 #### Changing Your Nework Information
 Useful skill to change IP address and other network information as it will help one access other networks while appearing as a trusted source. Simple tasks by using ``ifconfig`` *command*
-1. __*Changing Your IP Address*
-2. __*Changing Your Network Network Mask and Broadcast*
-3. __*Assigning New IP address from DHCP server*
-4. __*Spoofing Address*
+1. *Changing Your IP Address*
+2. *Changing Your Network Network Mask and Broadcast*
+3. *Assigning New IP address from DHCP server*
+4. *Spoofing Address*
 
