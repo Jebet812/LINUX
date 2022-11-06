@@ -23,8 +23,8 @@ Domain Name System (DNS) is designated to translate domain names to IP address.
 ``dig`` *command* is used to to gather DNS information about a target domain like ``ns`` (for *nameserver*) and and ``mx`` (short for *mail exchange server*) or any potential sub domains and IP addresses.
  
 #####  Changing Your DNS server
-- To use another DNS server you can edit a plain text file named */etc/resolv.conf* in the text editor and replacethe existing local DNS server to another DNS server thensave
+- To use another DNS server you can edit a plain text file named */etc/resolv.conf* in the text editor and replace the existing local DNS server to another DNS server then save.
 - You can achieve the same in the command line by entering ``echo "nameserver 8.8.8.8"> /etc/resolv.conf`` if for example you want to change the DNS server to Google's.
 
 #####  Mapping Your Own IP Addresses
-This can be used to determine which IP address your browser goes to when you enter e.g *www..google.com* by using *hosts* file located at */etc/hosts* instead of using the DNS server decide.
+This can be used to determine which IP address your browser goes to when you enter e.g *www..google.com* by using *hosts* file located at */etc/hosts* instead of the DNS server deciding.
