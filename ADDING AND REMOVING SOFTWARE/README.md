@@ -2,7 +2,7 @@
 ##  ADDING AND REMOVING SOFTWARE
 There key methods for adding new software.
 
-### Using ``apt`` to Hand Software
+### Using ``apt`` to Handle software
 In Debian-Linux the default software manager is Advanced Packaging Tool, or ``apt``, whose primary command ``apt-get``. You can use the command to download and install new software package but you can also update and upgrade software with it.
 
 #### Searching for a Package
@@ -22,7 +22,7 @@ This updates the list of package available for download from the repository. ``a
 #### Upgrading Packages
 Upgrading will upgrade the package to latest version in the repository. Type the command ``apt-get upgrade``
 
-### * Adding Repositories to Your source.list files*
+### *Adding Repositories to Your source.list files*
 *Repositories* serves to hold software for a particular distribution in Linux. Each distribution has its own repositories of software developed and configured for that distribution - that may not work well or at all, with other distributions hnce it is worth adding a back up repository or two that your repository can searc through incase it doesn't find a specific software in the current one.</br>
 The repositories the system will searc for are in the *source.list* file which is located in at */etc/apt/sources.list.*<br/>
 Ubuntu divide repositories into separate categories
