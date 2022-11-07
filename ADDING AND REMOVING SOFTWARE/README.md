@@ -32,4 +32,11 @@ Ubuntu divide repositories into separate categories
 - *Multiverse:* Contains software restricted by copyright or other legal issues
 - *Backports:* Contains packages from later releases
 
+### Using a GUI based installer
+The two most common GUI based installation tools are Synaptic and Gdebi.</br>
+Install Synaptic using ``apt-get install Synaptic`` and then use it to install the software you want.</br>
+Once Synaptic is installed open it, go to settings, Synaptic package manager which opens a window. Search the packae needed, click then apply.
+
+### Installing Software Using Git
+Some software may not be on any repositories but available on github. Use ``git clone`` command followed by the github URL to clone to the system.
 
