@@ -17,5 +17,19 @@ The command does not remove configuration files, hence you can reinstall in futu
 Use ``apt-get purge snort`` *command* to remove configuration files at the same time as the package or any package you want to remove. 
 
 #### Updating Package
-This updates 
+This updates the list of package available for download from the repository. ``apt-get update`` will search through package in system and check whether updates are available.
+
+#### Upgrading Packages
+Upgrading will upgrade the package to latest version in the repository. Type the command ``apt-get upgrade``
+
+### * Adding Repositories to Your source.list files*
+*Repositories* serves to hold software for a particular distribution in Linux. Each distribution has its own repositories of software developed and configured for that distribution - that may not work well or at all, with other distributions hnce it is worth adding a back up repository or two that your repository can searc through incase it doesn't find a specific software in the current one.</br>
+The repositories the system will searc for are in the *source.list* file which is located in at */etc/apt/sources.list.*<br/>
+Ubuntu divide repositories into separate categories
+- *Main:* Contains supported opensource software
+- *Universe:* Contains community-maintained opensource software
+- *Restricted:* Contains proprietary device drivers
+- *Multiverse:* Contains software restricted by copyright or other legal issues
+- *Backports:* Contains packages from later releases
+
 
